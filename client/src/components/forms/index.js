@@ -1,0 +1,5 @@
+export { default as TypeForm } from './TypeForm.vue'
+export { default as IndividualForm } from './IndividualForm.vue'
+export { default as CompanyForm } from './CompanyForm.vue'
+export { default as PasswordForm } from './PasswordForm.vue'
+export { default as ReviewForm } from './ReviewForm.vue'

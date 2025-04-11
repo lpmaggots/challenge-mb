@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+@use 'sass:color';
+
+button {
+  min-width: 100px;
+  font-size: $font-size-base;
+  padding: $spacing-sm $spacing-sm;
+  border: 1px solid $primary-color;
+  border-radius: $spacing-xs;
+  background-color: $primary-color;
+  color: $white-color;
+  cursor: pointer;
+  transition: background 0.3s;
+  &.is-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -10%);
+  }
+  &.secondary {
+    background-color: transparent;
+    color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: $white-color;
+    }
+  }
+}
+.spy-button {
+  position: absolute;
+  font-size: 15px;
+  top: 35px;
+  right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "mb-registration-server",
+  "version": "1.0.0",
+  "description": "Backend API for user registration built with Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "backend",
+    "api",
+    "registration",
+    "mercado-bitcoin",
+    "challenge",
+    "user"
+  ],
+  "author": "Felipe Falcone",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

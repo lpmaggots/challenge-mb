@@ -1,0 +1,35 @@
+@use '../base/variables' as *;
+
+label {
+  position: relative;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"] {
+  width: 100%;
+  height: 35px;
+  padding: $spacing-sm;
+  margin-top: $spacing-sm;
+  border: 1px solid $grey-color;
+  border-radius: $spacing-xs;
+}
+.radio-group {
+  display: flex;
+  gap: $spacing-md;
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+  font-size: $font-size-base;
+  cursor: pointer;
+  input[type="radio"] {
+    accent-color: $primary-color;
+  }
+}
+.input-error {
+  border: 1px solid $error-color !important;
+}
